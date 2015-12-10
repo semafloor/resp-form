@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>formApp</title>
+  <meta name="Author" content=""/>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  
+    <!-- <script src="../app/is.min.js"></script> -->
+    <!-- <script src="../app/app.js"></script> -->
+</head>
+<body>
+    <!--<div class="container">-->
+        <form action="/search/results" method="post">
+          <input type="submit"/>
+          <br /><br />
+          Choose your starting date:
+          <br/>
+          <div>
+            <input type="date" name="startDate" id="" value="{{startDate}}"/>
+            <br/><br/>
+          </div>
+          Choose your ending date:
+          <br/>
+          <div>
+            <input type="date" name="endDate" id="" value="{{endDate}}"/>
+            <br/><br/>
+          </div>
+          Choose your starting time:
+          <br />
+          <div>
+            <input type="time" name="tStart" id="tStart" value="08:00:00" min="08:00:00" max="23:30:00"/>
+            <br/><br/>
+          </div>
+          Choose your ending time:
+          <br />
+          <div>
+            <input type="time" name="tEnd" id="tEnd" value="23:30:00" min="08:00:00" max="23:30:00" />
+            <br/><br/>  
+          </div>
+          Capacity (Min. seating):
+          <br/>
+          <input type="number" name="capacity" value="{{capacity}}" min="0" max="99"/>
+          <br/><br/>
+          Preferred Site:
+          <br />
+          <select name="site" id="site">
+              <option value="">Any Value</option>
+              <option value="05tower">KLB - Tower 5</option>
+              <option value="2atower">KLB - Tower 2A</option>
+              <option value="suite">SUITE</option>
+          </select>
+          <br /><br />
+          Preferred Floor:
+          <br />
+          <select name="floor" id="floor">
+              <option value="">Any Value</option>
+              <option value="01level" disabled>Level 1</option>
+              <option value="02level" disabled>Level 2</option>
+              <option value="03level" disabled>Level 3</option>
+              <option value="04level" disabled>Level 3A</option>
+              <option value="05level" disabled>Level 5</option>
+              <option value="06level" disabled>Level 6</option>
+              <option value="07level" disabled>Level 7</option>
+              <option value="08level" disabled>Level 8</option>
+              <option value="09level" disabled>Level 9</option>
+              <option value="10level" disabled>Level 10</option>
+              <option value="11level" disabled>Level 11</option>
+              <option value="12level" disabled>Level 12</option>
+          </select>
+          
+          <br /><br />
+          Meeting Types:
+          <br />
+          <input type="checkbox" name="adjoin" id="adjoin"/>Adjoining Room (Operable Wall)
+          <br />
+          <input type="checkbox" name="pana" id="pana"/>Panaboard
+          <br />
+          <input type="checkbox" name="cs100" id="cx100"/>Polycom CX100 (Audio)
+          <br />
+          <input type="checkbox" name="cx5000" id="cx5000"/>Polycom CX5000 (Video Conferencing)
+          <br />
+          <input type="checkbox" name="proj" id="proj"/>Projector
+          <br />
+          <input type="checkbox" name="faulty_cable" id="faulty_cable"/>Projector Cable Faulty
+          <br />
+          <input type="checkbox" name="faulty_proj" id="faulty_proj"/>Projector Faulty
+          <br />
+          <input type="checkbox" name="faulty_screen" id="faulty_screen"/>Screen Projector Faulty
+          <br />
+          <input type="checkbox" name="smart" id="smart"/>SmartBoard 800
+          <br />
+          <input type="checkbox" name="tele" id="tele"/>Telepresence
+          <br />
+          <input type="checkbox" name="tv" id="tv"/>TV
+          <br />
+          <input type="checkbox" name="glass" id="glass"/>Writing Glass Board
+          <br /><br />
+          <input type="checkbox" name="multi" id="multi" />Book Multiple rooms from the searh result.
+          <br /><br />
+        </form>
+    <!--</div>-->
+</body>
+</html>

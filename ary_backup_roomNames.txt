@@ -1,0 +1,97 @@
+var room = ['Freedom Tower', 'Taipei 101', 'The Shard', 'Twin Towers', 'Willis Tower', 'Acetyls', 'Aromatics', 'Bitumen', 'Hydrocarbon', 'Lubricant', 'Olefin', 'DowJones', 'Euronext', 'FTSE', 'HangSeng', 'Nikkei', 'Austen', 'Dickens', 'Eliot', 'Rowling', 'Twain', 'Daffodil', 'Golden Wattle', 'Hibiscus', 'Orchid', 'Protea', 'Raflesia', 'Rose', 'Tulip', 'Courage', 'Exellence', 'One Team', 'Respect', 'Values', 'Alpha', 'Beta', 'Delta', 'Gamma', 'Kappa', 'Omega', 'Sigma', 'Zeta', 'Angsana', 'Cendana', 'Chengal', 'Jati', 'Meranti', 'Seraya', 'Teak', 'Batu Caves', 'Batu Ferringi', 'Cherating', 'Gunung Ledang', 'Jonker Street', 'Kinabalu', 'KLCC', 'Lake Melati', 'Limestone', 'Minangkabau', 'Putrajaya', 'Silat', 'Songket', 'Wellness Room', 'Degas', 'Michaelangelo', 'Monet', 'Picasso', 'Renoir', 'Sisley', 'Van Gogh', 'Anise', 'Cardamom', 'Cinnamon', 'Clove', 'Peppercorn', 'Sesame', 'Tamarind', 'Tumeric', 'Amethyst', 'Diamond', 'Emerald', 'Garnet', 'Pearl', 'Sapphire', 'Topaz', 'Zircon', 'Benz', 'Edison', 'Einstein', 'Fleming', 'Franklin', 'Graham', 'Newton', 'Whitney', 'Collaborate', 'Create', 'Fun', 'Grow', 'Idea', 'Innovate', 'Inspire', 'Lead', 'Meet', 'Team', 'Think'];
+    var organizedRoom = [
+    //     ['Freedom Tower', 'Taipei 101', 'The Shard', 'Twin Towers', 'Willis Tower'],
+        ['Acetyls', 'Aromatics', 'Bitumen', 'Hydrocarbon', 'Lubricant', 'Olefin'],
+        ['DowJones', 'Euronext', 'FTSE', 'HangSeng', 'Nikkei'],
+        ['Austen', 'Dickens', 'Eliot', 'Rowling', 'Twain'],
+        ['Daffodil', 'Golden Wattle', 'Hibiscus', 'Orchid', 'Protea', 'Raflesia', 'Rose', 'Tulip'],
+        ['Courage', 'Exellence', 'One Team', 'Respect', 'Values'],
+        ['Alpha', 'Beta', 'Delta', 'Gamma', 'Kappa', 'Omega', 'Sigma', 'Zeta'],
+        ['Angsana', 'Cendana', 'Chengal', 'Jati', 'Meranti', 'Seraya', 'Teak'],
+        ['Batu Caves', 'Batu Ferringi', 'Cherating', 'Gunung Ledang', 'Jonker Street', 'Kinabalu', 'KLCC', 'Lake Melati', 'Limestone', 'Minangkabau', 'Putrajaya', 'Silat', 'Songket', 'Wellness Room'],
+        ['Degas', 'Michaelangelo', 'Monet', 'Picasso', 'Renoir', 'Sisley', 'Van Gogh'],
+        ['Anise', 'Cardamom', 'Cinnamon', 'Clove', 'Peppercorn', 'Sesame', 'Tamarind', 'Tumeric'],
+        ['Amethyst', 'Diamond', 'Emerald', 'Garnet', 'Pearl', 'Sapphire', 'Topaz', 'Zircon'],
+        ['Benz', 'Edison', 'Einstein', 'Fleming', 'Franklin', 'Graham', 'Newton', 'Whitney'],
+        ['Collaborate', 'Create', 'Fun', 'Grow', 'Idea', 'Innovate', 'Inspire', 'Lead', 'Meet', 'Team', 'Think']
+    ];
+    var demo_multiDay = [
+    //     /* day01 */
+        [
+            /* day01_site01 */
+            [
+                ['Freedom Tower', 'Taipei 101', 'The Shard', 'Twin Towers', 'Willis Tower'],
+                ['Acetyls', 'Aromatics', 'Bitumen', 'Hydrocarbon', 'Lubricant', 'Olefin'],
+                ['DowJones', 'Euronext', 'FTSE', 'HangSeng', 'Nikkei'],
+                ['Austen', 'Dickens', 'Eliot', 'Rowling', 'Twain'],
+                ['Daffodil', 'Golden Wattle', 'Hibiscus', 'Orchid', 'Protea', 'Raflesia', 'Rose', 'Tulip'],
+                ['Courage', 'Exellence', 'One Team', 'Respect', 'Values'],
+                ['Alpha', 'Beta', 'Delta', 'Gamma', 'Kappa', 'Omega', 'Sigma', 'Zeta'],
+                ['Angsana', 'Cendana', 'Chengal', 'Jati', 'Meranti', 'Seraya', 'Teak'],
+                ['Batu Caves', 'Batu Ferringi', 'Cherating', 'Gunung Ledang', 'Jonker Street', 'Kinabalu', 'KLCC', 'Lake Melati', 'Limestone', 'Minangkabau', 'Putrajaya', 'Silat', 'Songket', 'Wellness Room'],
+                ['Degas', 'Michaelangelo', 'Monet', 'Picasso', 'Renoir', 'Sisley', 'Van Gogh'],
+                ['Anise', 'Cardamom', 'Cinnamon', 'Clove', 'Peppercorn', 'Sesame', 'Tamarind', 'Tumeric'],
+                ['Amethyst', 'Diamond', 'Emerald', 'Garnet', 'Pearl', 'Sapphire', 'Topaz', 'Zircon']
+            ],
+            /* day01_site02 */
+            [
+                ['Benz', 'Edison', 'Einstein', 'Fleming', 'Franklin', 'Graham', 'Newton', 'Whitney']
+            ],
+            /* day01_site03 */
+            [
+                ['Collaborate', 'Create', 'Fun', 'Grow', 'Idea', 'Innovate', 'Inspire', 'Lead', 'Meet', 'Team', 'Think']
+            ]
+        ],
+        /* day02 */
+        [
+            /* day02_site01 */
+            [
+                ['Freedom Tower', 'Taipei 101', 'The Shard', 'Twin Towers', 'Willis Tower'],
+                ['Acetyls', 'Aromatics', 'Bitumen', 'Hydrocarbon', 'Lubricant', 'Olefin'],
+                ['DowJones', 'Euronext', 'FTSE', 'HangSeng', 'Nikkei'],
+                ['Austen', 'Dickens', 'Eliot', 'Rowling', 'Twain'],
+                ['Daffodil', 'Golden Wattle', 'Hibiscus', 'Orchid', 'Protea', 'Raflesia', 'Rose', 'Tulip'],
+                ['Courage', 'Exellence', 'One Team', 'Respect', 'Values'],
+                ['Alpha', 'Beta', 'Delta', 'Gamma', 'Kappa', 'Omega', 'Sigma', 'Zeta'],
+                ['Angsana', 'Cendana', 'Chengal', 'Jati', 'Meranti', 'Seraya', 'Teak'],
+                ['Batu Caves', 'Batu Ferringi', 'Cherating', 'Gunung Ledang', 'Jonker Street', 'Kinabalu', 'KLCC', 'Lake Melati', 'Limestone', 'Minangkabau', 'Putrajaya', 'Silat', 'Songket', 'Wellness Room'],
+                ['Degas', 'Michaelangelo', 'Monet', 'Picasso', 'Renoir', 'Sisley', 'Van Gogh'],
+                ['Anise', 'Cardamom', 'Cinnamon', 'Clove', 'Peppercorn', 'Sesame', 'Tamarind', 'Tumeric'],
+                ['Amethyst', 'Diamond', 'Emerald', 'Garnet', 'Pearl', 'Sapphire', 'Topaz', 'Zircon']
+            ],
+            /* day02_site02 */
+            [
+                ['Benz', 'Edison', 'Einstein', 'Fleming', 'Franklin', 'Graham', 'Newton', 'Whitney']
+            ],
+            /* day02_site03 */
+            [
+                ['Collaborate', 'Create', 'Fun', 'Grow', 'Idea', 'Innovate', 'Inspire', 'Lead', 'Meet', 'Team', 'Think']
+            ]
+        ],
+        /* day03 */
+        [
+            /* day03_site01 - 86*/
+            [
+                ['Freedom Tower', 'Taipei 101', 'The Shard', 'Twin Towers', 'Willis Tower'], // 5
+                ['Acetyls', 'Aromatics', 'Bitumen', 'Hydrocarbon', 'Lubricant', 'Olefin'], // 6
+                ['DowJones', 'Euronext', 'FTSE', 'HangSeng', 'Nikkei'], // 5
+                ['Austen', 'Dickens', 'Eliot', 'Rowling', 'Twain'], // 5
+                ['Daffodil', 'Golden Wattle', 'Hibiscus', 'Orchid', 'Protea', 'Raflesia', 'Rose', 'Tulip'], // 8
+                ['Courage', 'Exellence', 'One Team', 'Respect', 'Values'], // 5
+                ['Alpha', 'Beta', 'Delta', 'Gamma', 'Kappa', 'Omega', 'Sigma', 'Zeta'], // 8
+                ['Angsana', 'Cendana', 'Chengal', 'Jati', 'Meranti', 'Seraya', 'Teak'], // 7
+                ['Batu Caves', 'Batu Ferringi', 'Cherating', 'Gunung Ledang', 'Jonker Street', 'Kinabalu', 'KLCC', 'Lake Melati', 'Limestone', 'Minangkabau', 'Putrajaya', 'Silat', 'Songket', 'Wellness Room'], // 14
+                ['Degas', 'Michaelangelo', 'Monet', 'Picasso', 'Renoir', 'Sisley', 'Van Gogh'], // 7
+                ['Anise', 'Cardamom', 'Cinnamon', 'Clove', 'Peppercorn', 'Sesame', 'Tamarind', 'Tumeric'], // 8
+                ['Amethyst', 'Diamond', 'Emerald', 'Garnet', 'Pearl', 'Sapphire', 'Topaz', 'Zircon'] // 8
+            ],
+            /* day03_site02 - 8*/
+            [
+                ['Benz', 'Edison', 'Einstein', 'Fleming', 'Franklin', 'Graham', 'Newton', 'Whitney']
+            ],
+            /* day03_site03 - 11*/
+            [
+                ['Collaborate', 'Create', 'Fun', 'Grow', 'Idea', 'Innovate', 'Inspire', 'Lead', 'Meet', 'Team', 'Think']
+            ]
+        ]
+    ];
